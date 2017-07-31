@@ -22,3 +22,11 @@
 #message {
 	font-size: 15px;
 }
+
+#dark {
+	background-color: blue;
+}
+
+#big {
+	font-size: 3em;
+}
