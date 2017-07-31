@@ -3,3 +3,22 @@
 
 }
 
+#userMessage {
+	border: 1px solid black;
+	display: block;
+	width: 60%;
+	height: 20%;
+}
+ 
+#messageArea {
+	font-size: 17px;
+	border-bottom: 1px solid black
+	color: red;
+	
+	/*display: flex;*/
+	/*float: left;*/
+}
+
+#message {
+	font-size: 15px;
+}
