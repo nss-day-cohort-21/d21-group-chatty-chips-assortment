@@ -6,26 +6,33 @@ Use flex: display flex; on applicable elements (for now).
 
 
 /* Navigation style:  */
-
+body{
+    margin-top:25%;
+}
 #navBar {
     display: inline;
 }
+
+#nav {
+    /* overflow: hidden; */
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline;
 
 
 /* All h1-h4 fonts: */
 
 
-
 /*Stored Message Area style:  */
 
-
-
-
 .dark {
-	background-color: darkgray;
+    background-color: darkgray;
     color: white;
 }
 
 .big {
-	font-size: 1.5em;
+    font-size: 1.5em;
 }
+
