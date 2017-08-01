@@ -6,9 +6,11 @@ Use flex: display flex; on applicable elements (for now).
 
 
 /* Navigation style:  */
-body{
-    margin-top:25%;
+
+body {
+    margin-top: 25%;
 }
+
 #navBar {
     display: inline;
 }
@@ -20,6 +22,7 @@ body{
     top: 0;
     width: 100%;
     display: inline;
+}
 
 
 /* All h1-h4 fonts: */
@@ -35,4 +38,3 @@ body{
 .big {
     font-size: 1.5em;
 }
-

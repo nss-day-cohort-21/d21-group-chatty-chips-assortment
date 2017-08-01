@@ -5,7 +5,7 @@ console.log("this is the main.js speaking!")
 let input = document.getElementById("textInput");
 let createButton = document.getElementById("createButton");
 let outputCard = document.getElementById("greetingCardMain");
-let outputCard = document.getElementById("messageMain");
+// let outputCard = document.getElementById("messageMain");
 let largeText = document.getElementById("largeText");
 let wholeArea = document.getElementById("wholeArea");
 let darkText = document.getElementById("darkTheme");
@@ -22,9 +22,9 @@ createButton.addEventListener("click", function() {
     // same as the button click function();
 
     //Define the outputText action
- 
-    let outputText = document.getElementById("messageMain");
-    outputText.innerHTML += input.value;
+
+    // let outputText = document.getElementById("messageMain");
+    // outputText.innerHTML += input.value;
 });
 
 //The function which will be invoked to transfer the message from the input field 
@@ -68,4 +68,3 @@ function addEventListenerToButton() {
 
     });
 };
-
