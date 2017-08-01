@@ -5,10 +5,12 @@ console.log("this is the main.js speaking!")
 let input = document.getElementById("textInput");
 let createButton = document.getElementById("createButton");
 let outputCard = document.getElementById("greetingCardMain");
+let outputCard = document.getElementById("messageMain");
 let largeText = document.getElementById("largeText");
 let wholeArea = document.getElementById("wholeArea");
 let darkText = document.getElementById("darkTheme");
 let wholeBig = document.getElementById("wholeBigText");
+
 //Add an event listener to the SEND button: 
 createButton.addEventListener("click", function() {
     createCard(input.value);
@@ -20,6 +22,7 @@ createButton.addEventListener("click", function() {
     // same as the button click function();
 
     //Define the outputText action
+ 
     let outputText = document.getElementById("messageMain");
     outputText.innerHTML += input.value;
 });
@@ -38,8 +41,6 @@ largeText.addEventListener("change", toggleLarge);
 function toggleLarge() {
     wholeBig.classList.toggle("big");
 }
-
-
 
 
 function createCard(message) {
@@ -68,15 +69,3 @@ function addEventListenerToButton() {
     });
 };
 
-
-
-
-// if ( e.hasChildNodes() )
-// {
-//     for(var i=0; i < e.childNodes.length; i++)
-//     {
-//         if(e.childNodes[i].nodeName == "extraaccounts") {
-//             e.removeChild(e.childNodes[i]);
-//         }
-//     } 
-// }

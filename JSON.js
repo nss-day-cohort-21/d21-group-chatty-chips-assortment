@@ -23,6 +23,8 @@ function showData(messages) {
         messageData += "<button>Delete</button>";
         // messageData += "<h2 id='messageTitle'>" + "by:" + " " + messageItem.Name;
         messageData += "<p id='message'>" + messageItem.Message;
+
+
         messageData += "</div>";
     }
     messageArea.innerHTML += messageData;
