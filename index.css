@@ -6,35 +6,35 @@ Use flex: display flex; on applicable elements (for now).
 
 
 /* Navigation style:  */
-
+body{
+    margin-top:25%;
+}
 #navBar {
     display: inline;
+}
+
+#nav {
+    /* overflow: hidden; */
+    background-color: whitesmoke;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: inline;
+
 }
 
 
 /* All h1-h4 fonts: */
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: Helvetica;
-}
-
 
 /*Stored Message Area style:  */
 
-#userMessage {
-    flex: display flex;
-    float: left;
-    font-family: Helvetica;
-    font-size: 1em;
-    border: 1px solid;
-    border-color: lightgray;
-    border-radius: 5px;
-    padding: 10px;
+.dark {
+    background-color: darkgray;
+    color: white;
 }
 
-#message {
-    font-size: 15px;
+.big {
+    font-size: 1.5em;
 }
+

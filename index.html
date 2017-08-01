@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html id="wholeBigText">
 
 <head>
     <title>Dynamic Cards</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
-
 <body>
 
+<nav id="nav">
     <!-- The following static info should display: the company Logo/image, a text input field 
         for a message, and a SEND button: -->
     <div>
@@ -24,11 +24,14 @@
     <br>
     <input type="checkbox" id="darkTheme" />Use Dark Theme<br>
     <input type="checkbox" id="largeText" />Use Large Text<br>
+    </nav>
+
+    
 
     <!-- MESSAGES: header, with a checkbox option to CLEAR ALL input messages -->
-    <h3>Messages:</h3>
-    <div id="greetingCardMain">
+    <h3 class="messagestop">Messages:</h3>
         <button type="checkbox" id="clearAll">Clear All</button>
+    <div id="greetingCardMain">
     </div>
 
     <!-- The following area in which the JSON array auto-loads the 5 dummy messsages, 

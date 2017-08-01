@@ -19,9 +19,10 @@ function showData(messages) {
     for (item in messages) {
         let messageItem = messages[item];
         messageData += "<div id='messageArea'>";
-        messageData += "<h2 id='messageTitle'>" + "by:" + " " + messageItem.Name;
-        messageData += "<p id='message'>" + messageItem.Message;
+        messageData += "<hr>"
         messageData += "<button>Delete</button>";
+        // messageData += "<h2 id='messageTitle'>" + "by:" + " " + messageItem.Name;
+        messageData += "<p id='message'>" + messageItem.Message;
         messageData += "</div>";
     }
     messageArea.innerHTML += messageData;

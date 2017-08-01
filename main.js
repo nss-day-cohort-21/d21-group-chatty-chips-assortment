@@ -5,7 +5,10 @@ console.log("this is the main.js speaking!")
 let input = document.getElementById("textInput");
 let createButton = document.getElementById("createButton");
 let outputCard = document.getElementById("greetingCardMain");
-
+let largeText = document.getElementById("largeText");
+let wholeArea = document.getElementById("wholeArea");
+let darkText = document.getElementById("darkTheme");
+let wholeBig = document.getElementById("wholeBigText");
 //Add an event listener to the SEND button: 
 createButton.addEventListener("click", function() {
     createCard(input.value);
@@ -17,17 +20,33 @@ createButton.addEventListener("click", function() {
     // same as the button click function();
 
     //Define the outputText action
-    // outputCard.innerHTML += input.value;
+    let outputText = document.getElementById("messageMain");
+    outputText.innerHTML += input.value;
 });
 
 //The function which will be invoked to transfer the message from the input field 
 // to the message storage area:
 
+//This makes the radio buttons change depending on which one is clicked
+darkText.addEventListener("change", toggleDark);
+
+function toggleDark() {
+    wholeBig.classList.toggle("dark");
+}
+largeText.addEventListener("change", toggleLarge);
+
+function toggleLarge() {
+    wholeBig.classList.toggle("big");
+}
+
+
+
 
 function createCard(message) {
     let greetingCard =
-        `<div><h3 class="messageToDelete">${message}</h3>
+        `<div id="space">
         <hr>
+        <p class="messageToDelete">${message}</p>
         <button class="deleteButton">Delete</button>
         </div>`;
     outputCard.innerHTML += greetingCard;
@@ -48,3 +67,16 @@ function addEventListenerToButton() {
 
     });
 };
+
+
+
+
+// if ( e.hasChildNodes() )
+// {
+//     for(var i=0; i < e.childNodes.length; i++)
+//     {
+//         if(e.childNodes[i].nodeName == "extraaccounts") {
+//             e.removeChild(e.childNodes[i]);
+//         }
+//     } 
+// }
