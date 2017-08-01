@@ -1,45 +1,34 @@
-// let input = document.getElementById("textInput");
-// let createButton = document.getElementById("createButton");
+console.log("this is the main.js speaking!")
 
-// createButton.addEventListener("click", function(){
-   
-//  let outputText = document.getElementById("userMessage");
-// outputText.innerHTML = input.value;
-// });
-
-// createButton.addEventListener('keyup', function(clickEnter) {
-//     if (clickEnter.which === 13) {
-        // same as the button click function();
-
-
-// let userMessage = document.querySelector('#clear');
-// let textarea = document.querySelector('#output');
-
-// userMessage.addEventListener('click', function () {
-//     textarea.value = '';
-// }, false);
+//Define the buttons on the "static" page:
 
 let input = document.getElementById("textInput");
 let createButton = document.getElementById("createButton");
 let outputCard = document.getElementById("greetingCardMain");
-// let outputText = document.getElementById("userMessage");
-createButton.addEventListener("click", function(){
+
+//Add an event listener to the SEND button: 
+createButton.addEventListener("click", function() {
     createCard();
-    // userMessage();
-let outputText = document.getElementById("greetingCardMain");
-outputText.innerHTML += input.value;
-// let deleteButton = document.getElementById("deleteButton");
-// console.log(outputText);
-// let garbage = deleteButton.removeChild(outputCard);
+
+    //Add another event listener to the SEND button which allows RETURN key to do the same:
+
+    // createButton.addEventListener('keyup', function(clickEnter) {
+    //     if (clickEnter.which === 13) {
+    // same as the button click function();
+
+    //Define the outputText action
+    let outputText = document.getElementById("greetingCardMain");
+    outputText.innerHTML += input.value;
 });
+
+//The function which will be invoked to transfer the message from the input field 
+// to the message storage area:
+
 function createCard() {
-    let greetingCard = 
+    let greetingCard =
         `<h3 id="userMessage"></h3>
          </div><hr>
-        <button id="deleteButton">Delete</button>
-        
-        
-         
+        <button id="deleteButton">Delete</button> 
          `;
-outputCard.innerHTML += greetingCard;
+    outputCard.innerHTML += greetingCard;
 }
