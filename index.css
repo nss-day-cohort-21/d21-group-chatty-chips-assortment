@@ -1,24 +1,40 @@
-#navBar{
-    display: inline;
+/*This is the CSS for the whole static page. 
+It is good practice to make your selectors intuitive in here.
+Use em rather than pixel size for fonts. 
+Use flex: display flex; on applicable elements (for now). 
+  */
 
+
+/* Navigation style:  */
+
+#navBar {
+    display: inline;
 }
+
+
+/* All h1-h4 fonts: */
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: Helvetica;
+}
+
+
+/*Stored Message Area style:  */
 
 #userMessage {
-	border: 1px solid black;
-	display: block;
-	width: 60%;
-	height: 20%;
-}
- 
-#messageArea {
-	font-size: 17px;
-	border-bottom: 1px solid black
-	color: red;
-	
-	/*display: flex;*/
-	/*float: left;*/
+    flex: display flex;
+    float: left;
+    font-family: Helvetica;
+    font-size: 1em;
+    border: 1px solid;
+    border-color: lightgray;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 #message {
-	font-size: 15px;
+    font-size: 15px;
 }
