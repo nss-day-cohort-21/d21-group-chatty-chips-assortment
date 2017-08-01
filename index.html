@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html id="wholeBigText">
 
 <head>
     <title>Dynamic Cards</title>
@@ -7,23 +7,9 @@
 </head>
 
 <body>
-    <div id="darkStuff">
-    logo:<br>
-        <input type="text" id="textInput"><br>
-        <br>
-        <input type="radio"  id="darkTheme"/>Dark Theme<br>
-        <input type="radio"  id="largeText"/>Large Text<br>
-
-   <button id="createButton">Send</button>
-    <h3>Message:</h3>
-    <div id="greetingCardMain">
-    
-       
-   </div>
 
     <!-- The following static info should display: the company Logo/image, a text input field 
         for a message, and a SEND button: -->
-
     <div>
         <img id="logoID" src="images/logo.png" placeholder="Chips Assortment">
     </div>
@@ -41,14 +27,9 @@
 
     <!-- MESSAGES: header, with a checkbox option to CLEAR ALL input messages -->
     <h3>Messages:</h3>
-    <div id="greetingCardMain">
+    <div id="messageMain">
         <button type="checkbox" id="clearAll">Clear All</button>
     </div>
-
-<script type="text/javascript" src="main.js"></script>
-<script type="text/javascript" src="JSON.js"></script>
-</div>
-
 
     <!-- The following area in which the JSON array auto-loads the 5 dummy messsages, 
 and where any following 
@@ -62,7 +43,7 @@ input messages should display, with the most recent first -->
 
     <!-- this footer may not be necessary, but it breaks up the page as a placeholder for now -->
     <footer>
-        Footer Placeholder
+
     </footer>
 
     <script type="text/javascript" src="main.js"></script>

@@ -14,36 +14,18 @@ Use flex: display flex; on applicable elements (for now).
 
 /* All h1-h4 fonts: */
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: Helvetica;
-}
 
 
 /*Stored Message Area style:  */
 
-#userMessage {
-    flex: display flex;
-    float: left;
-    font-family: Helvetica;
-    font-size: 1em;
-    border: 1px solid;
-    border-color: lightgray;
-    border-radius: 5px;
-    padding: 10px;
-}
 
-#message {
-	font-size: 15px;
-}
+
 
 .dark {
-	background-color: blue;
+	background-color: darkgray;
+    color: white;
 }
 
 .big {
-	font-size: 3em;
-    font-size: 15px;
+	font-size: 1.5em;
 }
