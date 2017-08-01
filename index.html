@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Dynamic Cards</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
+
 <body>
     <div id="darkStuff">
     logo:<br>
@@ -18,19 +20,54 @@
     
        
    </div>
-    <div>
-        <header>
-        <h3>Message:</h3>
-     <button>clear all</button></header>
-        <div id="userMessage"></div>
-            <h2 id="title"></h2>
-            <p id="message"></p>
 
-          <div id="reset">
-        <input type="button" id="clear" name="clear" value="RESET">
+    <!-- The following static info should display: the company Logo/image, a text input field 
+        for a message, and a SEND button: -->
+
+    <div>
+        <img id="logoID" src="images/logo.png" placeholder="Chips Assortment">
     </div>
+    <br>
+    <!-- MESSAGE INPUT FIELD -->
+    <input type="text" id="textInput"><br>
+    <br>
+    <!-- SEND MESSAGE BUTTON -->
+    <button id="createButton">Send Message</button>
+    <br>
+    <!-- User display preference Buttons for THEME and TEXT: -->
+    <br>
+    <input type="checkbox" id="darkTheme" />Use Dark Theme<br>
+    <input type="checkbox" id="largeText" />Use Large Text<br>
+
+    <!-- MESSAGES: header, with a checkbox option to CLEAR ALL input messages -->
+    <h3>Messages:</h3>
+    <div id="greetingCardMain">
+        <button type="checkbox" id="clearAll">Clear All</button>
+    </div>
+
 <script type="text/javascript" src="main.js"></script>
 <script type="text/javascript" src="JSON.js"></script>
 </div>
 
+
+    <!-- The following area in which the JSON array auto-loads the 5 dummy messsages, 
+and where any following 
+input messages should display, with the most recent first -->
+
+
+    <div id="userMessage"></div>
+    <h2 id="title"></h2>
+    <p id="message"></p>
+
+
+    <!-- this footer may not be necessary, but it breaks up the page as a placeholder for now -->
+    <footer>
+        Footer Placeholder
+    </footer>
+
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="JSON.js"></script>
+
 </body>
+
+</html>
