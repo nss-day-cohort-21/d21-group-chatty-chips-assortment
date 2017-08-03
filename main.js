@@ -10,10 +10,26 @@ let largeText = document.getElementById("largeText");
 let wholeArea = document.getElementById("wholeArea");
 let darkText = document.getElementById("darkTheme");
 let wholeBig = document.getElementById("wholeBigText");
+let onlyMessageArea = document.getElementById("allMessages");
+let clearButton = document.getElementById("clearAll");
+
+Chatty.getMessages();
+
+
+clearButton.addEventListener("click", function(){
+    while(onlyMessageArea.firstChild){
+        onlyMessageArea.removeChild(onlyMessageArea.firstChild);
+    }
+});
+
 
 //Add an event listener to the SEND button: 
 createButton.addEventListener("click", function() {
-    createCard(input.value);
+ 
+// Chatty.takeAwayFromMessageArray(input.value);    
+Chatty.addToMessageArray(input.value);
+outputCard.innerHTML += Chatty.createCard(input.value);
+// Chatty.addEventListenerToButton();
 
     //Add another event listener to the SEND button which allows RETURN key to do the same:
 
@@ -43,28 +59,28 @@ function toggleLarge() {
 }
 
 
-function createCard(message) {
-    let greetingCard =
-        `<div id="space">
-        <hr>
-        <p class="messageToDelete">${message}</p>
-        <button class="deleteButton">Delete</button>
-        </div>`;
-    outputCard.innerHTML += greetingCard;
-    addEventListenerToButton();
-};
+// function createCard(message) {
+//     let greetingCard =
+//         `<div id="space">
+//         <hr>
+//         <p class="messageToDelete">${message}</p>
+//         <button class="deleteButton">Delete</button>
+//         </div>`;
+//     outputCard.innerHTML += greetingCard;
+//     addEventListenerToButton();
+// };
 
-function addEventListenerToButton() {
-    let buttonDelete = document.querySelector(".deleteButton");
-    console.log(buttonDelete);
-    buttonDelete.addEventListener("click", Element.prototype.remove = function() {
-        console.log(this);
-        let deleteMessage = document.getElementsByClassName("messageToDelete");
-        this.parentElement.removeChild(deleteMessage[0]);
+// function addEventListenerToButton() {
+//     let buttonDelete = document.querySelector(".deleteButton");
+//     console.log(buttonDelete);
+//     buttonDelete.addEventListener("click", Element.prototype.remove = function() {
+//         console.log(this);
+//         let deleteMessage = document.getElementsByClassName("messageToDelete");
+//         this.parentElement.removeChild(deleteMessage[0]);
 
-        console.log(deleteMessage[0]);
-        this.parentElement.removeChild(this);
+//         console.log(deleteMessage[0]);
+//         this.parentElement.removeChild(this);
 
 
-    });
-};
+//     });
+// };
